@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0d0e12">
+<meta name="description" content="Temukan undangan digital pernikahan elegan, praktis, dan siap dibagikan. Pilih desain favorit dan pesan dengan mudah di Janjiku.">
+<title>Janjiku — Undangan Digital, Dibuat Istimewa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="topline"></div>
+<header>
+  <div class="wrap bar">
+    <a href="#/beranda" class="logo"><i class="logo-mark"></i>Janjiku</a>
+    <button class="menu-btn" type="button" aria-expanded="false" onclick="toggleMenu()">Menu</button>
+    <nav id="nav" aria-label="Navigasi utama">
+      <a href="#/beranda" data-page="beranda">Beranda</a>
+      <a href="#/desain" data-page="desain">Koleksi</a>
+      <a href="#/cara" data-page="cara">Cara pesan</a>
+    </nav>
+    <div class="head-actions">
+      <a href="#/keranjang" class="cart-link" aria-label="Buka keranjang">Keranjang <span id="cartCount" class="cart-count">0</span></a>
+      <a href="#/desain" class="btn pri sm">Pilih desain <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="page" id="page-beranda">
+    <div class="hero">
+      <div>
+        <span class="eyebrow">Hari istimewa, undangan istimewa</span>
+        <h1>Undangan yang terasa <em>seperti kalian.</em></h1>
+        <p class="hero-copy">Temukan desain undangan digital yang elegan, personal, dan mudah dibagikan. Pilih favoritmu, pesan dalam beberapa langkah.</p>
+        <div class="actions">
+          <a href="#/desain" class="btn pri">Jelajahi koleksi <span aria-hidden="true">→</span></a>
+          <a href="#/cara" class="btn ghost">Cara pemesanan</a>
+        </div>
+        <div class="proof">
+          <div><b>9 desain</b><span>Koleksi pilihan</span></div>
+          <div><b>Instan</b><span>Format digital</span></div>
+          <div><b>Personal</b><span>Dibuat untukmu</span></div>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Contoh desain undangan digital">
+        <div class="glow"></div>
+        <div class="hero-frame"><div class="hero-invitation">
+          <div><small>Undangan pernikahan</small><div class="names">Raka<i>&amp;</i>Nadia</div><p>Dengan penuh rasa syukur<br>kami mengundang Anda</p><p style="margin-top:20px;color:#d8ad8e">SABTU · 18 OKTOBER 2026</p></div>
+        </div></div>
+        <div class="hero-stamp"><b>Digital &amp; praktis</b>Siap dibagikan online</div>
+        <div class="hero-caption">Desain pilihan · Format undangan digital</div>
+      </div>
+    </div>
+    <div class="trustbar">
+      <span><i>✦</i> Desain premium</span><span><i>✦</i> Mudah dibagikan</span><span><i>✦</i> Praktis untuk semua tamu</span><span><i>✦</i> Pemesanan sederhana</span>
+    </div>
+    <div class="section-head"><div><span class="eyebrow">Koleksi pilihan</span><h2>Temukan desain favorit</h2><p>Setiap detail dirancang untuk cerita yang berbeda.</p></div><a href="#/desain" class="btn ghost sm">Lihat semua desain →</a></div>
+    <div class="product-grid" id="featuredProducts"></div>
+    <div class="benefits">
+      <article class="benefit"><div class="icon">✳</div><h3>Lebih praktis</h3><p>Bagikan undangan melalui tautan tanpa harus mencetak dan mengirim satu per satu.</p></article>
+      <article class="benefit"><div class="icon">◇</div><h3>Tampilan personal</h3><p>Pilih desain yang sesuai dengan suasana dan karakter hari bahagiamu.</p></article>
+      <article class="benefit"><div class="icon">↗</div><h3>Siap dibagikan</h3><p>Undangan digital dapat dibuka dengan mudah dari ponsel maupun komputer.</p></article>
+    </div>
+    <div class="faq">
+      <h2>Pertanyaan umum</h2>
+      <details><summary>Apa yang saya dapatkan setelah memesan?</summary><p>Setiap desain memiliki paket dan rincian fitur yang ditampilkan pada kartu produk. Detail pemenuhan pesanan akan dikonfirmasi setelah proses pembayaran resmi tersedia.</p></details>
+      <details><summary>Bisakah saya melihat desain sebelum memilih?</summary><p>Bisa. Tekan tombol “Pratinjau” pada produk untuk melihat contoh tampilan undangan.</p></details>
+      <details><summary>Apakah checkout sudah menerima pembayaran?</summary><p>Belum. Situs ini adalah demo katalog dan checkout; pembayaran online dan pemrosesan pesanan belum terhubung.</p></details>
+    </div>
+  </section>
+
+  <section class="page" id="page-desain">
+    <span class="eyebrow">Katalog undangan</span>
+    <h1 class="ptitle">Koleksi desain</h1>
+    <p class="psub">Pilih gaya yang paling menggambarkan hari istimewamu. Lihat pratinjau, bandingkan paket, lalu tambahkan ke keranjang. Harga yang tertera merupakan contoh untuk demo.</p>
+    <div class="filters" id="filters" aria-label="Filter kategori"></div>
+    <div class="product-grid" id="allProducts"></div>
+  </section>
+
+  <section class="page" id="page-cara">
+    <span class="eyebrow">Mudah dan praktis</span>
+    <h1 class="ptitle">Cara pemesanan</h1>
+    <p class="psub">Alur sederhana untuk membantu memilih undangan yang tepat. Checkout saat ini masih berupa simulasi.</p>
+    <div class="how-grid">
+      <article class="how-card"><div class="num">01</div><h3>Pilih desain</h3><p>Jelajahi koleksi dan buka pratinjau setiap undangan sebelum menentukan pilihan.</p></article>
+      <article class="how-card"><div class="num">02</div><h3>Masukkan keranjang</h3><p>Tambahkan desain pilihan dan tinjau jumlah serta total belanja di keranjang.</p></article>
+      <article class="how-card"><div class="num">03</div><h3>Isi data pemesan</h3><p>Lengkapi detail kontak untuk membuat ringkasan pesanan simulasi.</p></article>
+    </div>
+    <div class="notice" style="margin-top:22px">Informasi: checkout demo ini belum menerima pembayaran atau mengirim pesanan ke penjual. Hubungkan backend dan payment gateway sebelum menerima transaksi sungguhan.</div>
+    <div style="margin-top:25px"><a href="#/desain" class="btn pri">Mulai pilih desain →</a></div>
+  </section>
+
+  <section class="page" id="page-keranjang">
+    <span class="eyebrow">Pesananmu</span>
+    <h1 class="ptitle">Keranjang belanja</h1>
+    <p class="psub">Pastikan desain dan jumlah yang dipilih sudah sesuai.</p>
+    <div id="cartContent"></div>
+  </section>
+
+  <section class="page" id="page-checkout">
+    <span class="eyebrow">Langkah terakhir</span>
+    <h1 class="ptitle">Detail pemesan</h1>
+    <p class="psub">Isi kontak untuk membuat ringkasan pesanan simulasi.</p>
+    <div class="checkout-layout">
+      <form id="checkoutForm" class="checkout-card">
+        <h3>Informasi pemesan</h3>
+        <div class="field"><label for="buyerName">Nama lengkap</label><input id="buyerName" name="buyerName" autocomplete="name" required maxlength="100" placeholder="Nama pemesan"></div>
+        <div class="field"><label for="buyerEmail">Email</label><input id="buyerEmail" name="buyerEmail" type="email" autocomplete="email" required maxlength="150" placeholder="nama@email.com"></div>
+        <div class="field"><label for="buyerPhone">Nomor WhatsApp</label><input id="buyerPhone" name="buyerPhone" type="tel" autocomplete="tel" required maxlength="24" placeholder="08xxxxxxxxxx"></div>
+        <div class="notice">Checkout hanya simulasi. Tombol ini tidak menagih, tidak meminta data pembayaran, dan tidak meneruskan data ke server.</div>
+        <button class="btn pri" type="submit">Buat pesanan simulasi →</button>
+      </form>
+      <aside class="cart-summary" id="checkoutSummary"></aside>
+    </div>
+  </section>
+
+  <section class="page" id="page-selesai">
+    <span class="eyebrow">Ringkasan dibuat</span>
+    <div id="confirmationContent"></div>
+  </section>
+</main>
+
+<footer><div class="wrap foot"><a href="#/beranda" class="logo"><i class="logo-mark"></i>Janjiku</a><p class="foot-note">Katalog dan checkout demo undangan digital. Pembayaran online belum terhubung; jangan gunakan sebagai toko transaksi nyata sebelum integrasi backend.</p><span>© <span id="year"></span> Janjiku</span></div></footer>
+
+<div id="preview" class="preview" role="dialog" aria-modal="true" aria-label="Pratinjau undangan" onclick="if(event.target===this)closePreview()">
+  <div class="preview-dialog"><div class="preview-top"><b id="previewTitle">Pratinjau desain</b><button class="preview-close" type="button" onclick="closePreview()" aria-label="Tutup pratinjau">×</button></div><div id="previewBody"></div><button id="previewAdd" class="btn pri" type="button">Tambah ke keranjang</button></div>
+</div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
