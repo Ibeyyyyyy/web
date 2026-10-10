@@ -1,1 +1,3 @@
-# web
+# Janjiku
+
+Katalog undangan digital.

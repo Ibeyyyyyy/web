@@ -7,7 +7,12 @@ const PRODUCTS=[
   {id:'plum-velvet',name:'Plum Velvet',category:'Elegan',theme:'th-plum',price:139000,description:'Warna plum yang dramatis untuk pesta penuh kesan.'},
   {id:'ivory-ornament',name:'Ivory Ornamental',category:'Ornamen',theme:'th-ornate',price:129000,coverLabel:'Undangan pernikahan',motif:'❧  ✦  ❧',description:'Latar putih gading, bingkai klasik, dan ornamen floral pernikahan yang anggun.'},
   {id:'paes-jawa',name:'Paes Jawa',category:'Tradisional Jawa',theme:'th-jawa',price:159000,coverLabel:'Adat Jawa',motif:'✦  ❖  ✦',description:'Warna hitam dengan aksen emas dan sentuhan motif tradisi Jawa.'},
-  {id:'oldschool-noir',name:'Oldschool Noir',category:'Oldschool',theme:'th-oldschool',price:139000,coverLabel:'The Wedding',motif:'EST. · 2026 · EST.',description:'Undangan hitam bergaya oldschool dengan tekstur retro dan aksen vintage.'}
+  {id:'oldschool-noir',name:'Oldschool Noir',category:'Oldschool',theme:'th-oldschool',price:139000,coverLabel:'The Wedding',motif:'EST. · 2026 · EST.',description:'Undangan hitam bergaya oldschool dengan tekstur retro dan aksen vintage.'},
+  {id:'aurora-bloom',name:'Aurora Bloom',category:'Floral',theme:'th-aurora',price:129000,coverLabel:'A Garden Wedding',motif:'✿  ❋  ✿',description:'Bunga ilustratif bernuansa lilac dan biru untuk pesta yang romantis.'},
+  {id:'blue-hydrangea',name:'Blue Hydrangea',category:'Floral',theme:'th-hydrangea',price:139000,coverLabel:'Together with joy',motif:'❀  ✧  ❀',description:'Palet biru pucat dan bunga hydrangea untuk kesan segar nan anggun.'},
+  {id:'terracotta-vows',name:'Terracotta Vows',category:'Rustic',theme:'th-terracotta',price:119000,coverLabel:'Our wedding day',motif:'❧  ◇  ❧',description:'Warna terracotta, tekstur hangat, dan nuansa rustic yang akrab.'},
+  {id:'art-deco-noir',name:'Art Deco Noir',category:'Art Deco',theme:'th-deco',price:159000,coverLabel:'A grand celebration',motif:'◆  ─  ◆',description:'Geometri hitam dan garis emas untuk undangan bergaya art deco.'},
+  {id:'pearl-lace',name:'Pearl & Lace',category:'Klasik',theme:'th-pearl',price:149000,coverLabel:'The wedding invitation',motif:'❦  ♡  ❦',description:'Putih mutiara dengan renda lembut untuk tampilan klasik dan timeless.'}
 ];
 const CART_KEY='janjiku.store.cart.v1',ORDER_KEY='janjiku.store.orders.v1';
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
